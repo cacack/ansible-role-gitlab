@@ -1,0 +1,5 @@
+---
+
+gitlab_version: '10.3.0'
+gitlab_gpg_key_url: 'https://packages.gitlab.com/gitlab/gitlab-ce/gpgkey'
+gitlab_gpg_key_id: '1A4C919DB987D435939638B914219A96E15E78F4'
