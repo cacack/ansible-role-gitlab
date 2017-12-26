@@ -10,19 +10,3 @@
   become: 'yes'
   loop_control:
     loop_var: os_item
-    
-- name: Enable and start docker daemon
-  service:
-    name: docker
-    state: started
-    enabled: 'yes'
-  become: 'yes'
-
-- name: Add users to docker group
-  user:
-    name: "{{ item }}"
-    append: "yes"
-    groups:
-      - "docker"
-  with_items: "{{ docker_users }}"
-  become: 'yes'
